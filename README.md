@@ -3,19 +3,19 @@ OR
 call ./s.js [...comands]
 
 
-#do a standup#
+# do a standup
 s -s team date
 "John Smith" [q] current [x] goal [r] notes
 
-#end a standup#
+# end a standup#
 s -se
 
-#create a new team#
+# create a new team#
 s -nt new-team-name
 
-#edit team#
+# edit team
 s -et team new-name
 
-#add a student to a team#
+# add a student to a team#
 s -a team student-name
 
