@@ -42,9 +42,10 @@ const runCommands = () => {
                 }
 
                 //make sure none of the args are flags
+                //AND that they all exist
                 for(let i = 0; i < argArgs.length; i++){
-                    if(argArgs[i].slice(0,1) === '-'){
-                        let errMsg = 'Insufficient or malformed arguments for function' + fnf.flag
+                    if(argArgs[i] === undefined || argArgs[i].slice(0,1) === '-'){
+                        let errMsg = 'Insufficient or malformed arguments for function: \"' + fnf.flag + '\"'
                         console.log(errMsg)
                         return {err: {msg: errMsg}}
                     }

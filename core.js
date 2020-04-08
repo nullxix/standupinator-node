@@ -8,7 +8,7 @@
 
 const   commandParser = require('./command-parser.js'),
         standup = require('./commands/standup.js'),
-        {state, data}= require('./data-layer/interface.js'),
+        {state, data}= require('./data-layer/interface.js')
 
 //************************************/
 // Core Interface
@@ -49,6 +49,8 @@ commandParser.registerFlagAndFunction('-x', (txt) => {
 
 //standup command which takes 2 arguments
 commandParser.registerFlagAndFunction('-s', standup.command(interface), 2)
+
+//runs commands
 commandParser.init()
 
 
