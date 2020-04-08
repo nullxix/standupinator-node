@@ -4,11 +4,13 @@ call ./s.js [...comands]
 
 
 # do a standup
-s -s team date
+`s -s team date`
 "John Smith" [q] current [x] goal [r] notes
 
 # end a standup#
+```bash
 s -se
+```
 
 # create a new team#
 s -nt new-team-name
